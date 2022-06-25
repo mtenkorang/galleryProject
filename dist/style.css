@@ -215,6 +215,7 @@ a {
   left: 20px;
   bottom: 20px;
   color: hsl(0deg, 0%, 100%);
+  width: 52%;
 }
 
 .post-title, .post-author {
@@ -224,7 +225,6 @@ a {
 }
 
 .post-title {
-  width: 90%;
   font-weight: 500;
   font-size: 1.2rem;
 }
