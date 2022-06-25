@@ -58,7 +58,7 @@ window.addEventListener('load', () => {
 
     value = obtainValue("verinfo");
 
-    // Fetch Data
+    // Fetch Data.JSON from Online
     DataRetrieval(value);
 
     function DataRetrieval(value) {
@@ -107,7 +107,7 @@ window.addEventListener('load', () => {
 
 
     //Slide Transitions
-    function fadeIn(element, duration = 800) {
+    function fadeIn(element, duration = 500) {
         element.style.display = '';
         element.style.opacity = 0;
         var last = +new Date();
