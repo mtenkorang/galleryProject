@@ -231,7 +231,7 @@ a {
 
 .post-title {
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .post-author {
@@ -249,7 +249,7 @@ a {
   }
 
   .post.level-5 .post-overlay {
-    width: 100%;
+    width: 90%;
   }
 }
 /*Tablet Grid*/
