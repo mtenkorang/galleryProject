@@ -218,6 +218,11 @@ a {
   width: 75%;
 }
 
+@media screen and (min-width: 900px) {
+  .post-overlay {
+    width: 90%;
+  }
+}
 .post-title, .post-author {
   margin: 10px;
   font-weight: bold;
@@ -226,7 +231,7 @@ a {
 
 .post-title {
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 .post-author {
@@ -234,6 +239,19 @@ a {
   font-size: 1rem;
 }
 
+.post.level-7 .post-overlay {
+  width: 60%;
+}
+
+@media screen and (min-width: 900px) {
+  .post.level-7 .post-overlay {
+    width: 70%;
+  }
+
+  .post.level-5 .post-overlay {
+    width: 100%;
+  }
+}
 /*Tablet Grid*/
 @media screen and (max-width: 850px) {
   .gallery {
