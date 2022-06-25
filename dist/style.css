@@ -215,7 +215,7 @@ a {
   left: 20px;
   bottom: 20px;
   color: hsl(0deg, 0%, 100%);
-  width: 52%;
+  width: 78%;
 }
 
 .post-title, .post-author {
@@ -226,7 +226,7 @@ a {
 
 .post-title {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .post-author {
@@ -622,18 +622,6 @@ a {
   width: auto;
   font-size: 1rem;
   font-weight: 600;
-}
-
-.post-title, .post-author {
-  margin: 10px;
-  font-weight: bold;
-  display: block;
-}
-
-.post-title {
-  width: 100%;
-  font-weight: 500;
-  font-size: 1.2rem;
 }
 
 .post-author {
