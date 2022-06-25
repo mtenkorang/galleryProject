@@ -6,8 +6,9 @@ window.addEventListener('load', () => {
 
     function fadeIn(element, duration = 500) {
         element.style.display = '';
-        var last = +new Date();
-        var tick = function() {
+        element.style.opacity = 0;
+        let last = +new Date();
+        let tick = function() {
             element.style.opacity = +element.style.opacity + (new Date() - last) / duration;
             last = +new Date();
             if(+element.style.opacity < 1) {
