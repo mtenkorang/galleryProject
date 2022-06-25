@@ -11,16 +11,21 @@
     <title>Slideshow</title>
 </head>
 <body>
-    
+    <!-- Lightview Container -->
     <div class="model" id="model" data-animation="slideInOutLeft">
-        <div class="model-picture" id="model-picture">
-            <div class="close" id="close">
-                close
-            </div>
-        </div>
-    </div>
+      <div id="light-view">
+          <div class="model-picture" id="model-image">
+              <div class="close" id="close">
+                  close
+              </div>
+          </div>
+      </div>
+
+      </div>
+    
 
     <div class="container">
+      <!-- Header -->
         <header class="header">
             <div class="logo">
                 <img src="./assets/shared/logo.svg" alt="Galleria Logo">
@@ -32,28 +37,28 @@
         <section class="slide" id="slide" display="none">
 
             <div class="slide-gallery">
-
+                <!-- Art Picture -->
                 <div class="slide-gallery-picture" id="hero-image">
-                    <div class="view-picture" id="viewpicture">
+                    <div class="view-picture" id="view-picture">
                         <div class="view">
                         </div>
                          <span>view image</span>
                     </div>
                 </div>
-
+                <!-- Art Header -->
                 <div class="slide-gallery-card">
-                  <h1 class="slide-title" id="hero-title">
+                  <h1 id="hero-title">
                     Starry Night
                   </h1>
-                  <p class="slide-author" id="hero-author">
+                  <p id="hero-author">
                     Vincent Van Gogh
                   </p>
                 </div>
-
+                <!-- Author Image -->
                 <div class="slide-gallery-author" id="author-image">
                 </div>
             </div>
-
+            <!-- Art Information -->
             <div class="slide-info">
               <span class="year" id="year">1889</span>
               <p id="description"></p>
@@ -66,6 +71,7 @@
 
     <!-- FOOTER -->
     <footer class="footer">
+      <!-- Progress Bar -->
       <progress class="progress" id="progress" value="6.8" max="100">
         6.8%
       </progress>
@@ -74,6 +80,7 @@
           <span class="post-title footer-title" id="footer-title">Starry Night</span>
           <span class="post-author" id="footer-author">Vincent Van Gogh</span>
         </p>
+        <!-- Navigation Buttons -->
         <div class="buttons">
           <a class="button button-back" id="back" >
             <svg width="26" height="24" xmlns="http://www.w3.org/2000/svg"><g stroke="#000" fill="none" fill-rule="evenodd"><path d="M24.166 1.843L3.627 12.113l20.539 10.269V1.843z" stroke-width="2"/><path fill="#D8D8D8" d="M.986.5h-1v22.775h1z"/></g></svg>
