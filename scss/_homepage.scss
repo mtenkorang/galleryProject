@@ -1,0 +1,260 @@
+.gallery {
+    width: 90vw;
+    margin: 0 auto 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 210px 20px 200px 100px 100px 100px 80px 80px 100px 160px;
+    gap: 1.25rem;
+}
+
+.level-1{
+    background-image: url("../assets/starry-night/gallery.jpg");
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.level-2{
+    grid-column: span 1;
+    grid-row: span 3;
+    background-image: url("../assets/girl-with-pearl-earring/gallery.jpg");
+}
+
+.level-3{
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url("../assets/guernica/gallery.jpg");
+}
+
+.level-4{
+    grid-row: span 1;
+    grid-column: span 1;
+    background-image: url("../assets/penitent-magdalene/gallery.jpg");
+}
+
+.level-5{
+    grid-row: 2/5;
+    grid-column: 1/2;
+    background-image: url("../assets/the-storm-on-the-sea-of-galilee/gallery.jpg");
+}
+
+.level-6{
+    grid-row: 4/6;
+    grid-column: 2/3;
+    background-image: url("../assets/the-great-wave-off-kanagawa/gallery.jpg");
+}
+
+.level-7{
+    grid-row: 3/7;
+    grid-column: 3/4;
+    background-image: url("../assets/van-gogh-self-portrait/gallery.jpg");
+}
+
+.level-8{
+    grid-row: span 2;
+    grid-column: 4/5;
+    background-image: url("../assets/the-sleeping-gypsy/gallery.jpg");
+}
+
+.level-9{
+    grid-column: 1/2;
+    grid-row: 5/9;
+    background-image: url("../assets/lady-with-an-ermine/gallery.jpg");
+}
+
+.level-10{
+    grid-column: 2/3;
+    grid-row: 6/8;
+    background-image: url("../assets/the-night-cafe/gallery.jpg");
+}
+
+.level-11{
+    grid-column: 4/5;
+    grid-row: 4/8;
+    background-image: url("../assets/the-basket-of-apples/gallery.jpg");
+}
+
+.level-12{
+    grid-column: 1/2;
+    grid-row: 9/11;
+    background-image: url("../assets/the-boy-in-the-red-vest/gallery.jpg");
+}
+
+.level-13{
+    grid-column: 2/3;
+    grid-row: 8/11;
+    background-image: url("../assets/arnolfini-portrait/gallery.jpg");
+}
+
+.level-14{
+    grid-column: 3/4;
+    grid-row: 7/11;
+    background-image: url("../assets/mona-lisa/gallery.jpg");
+}
+
+.level-15{
+    grid-column: 4/5;
+    grid-row: 8/11;
+    background-image: url("../assets/the-swing/gallery.jpg");
+}
+
+/*Post*/
+.post{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    background-color: $lightGray;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: filter .4s ease;
+}
+
+.post::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $blackLight;
+}
+
+.post:hover{
+    filter: brightness(130%);
+}
+
+.post-overlay {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: $white;
+    width: 75%;
+}
+
+@media screen and (min-width: 900px) {
+    .post-overlay{
+        width: 90%;
+    }
+}
+.post-title, .post-author {
+    margin: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+.post-title { 
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.post-author{
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+//VanGogh
+.post.level-7 .post-overlay{
+    width: 60%;
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+    .post.level-7 .post-overlay{
+        width: 70%;
+    }
+
+    .post.level-5 .post-overlay{
+        width: 90%;
+    }
+}
+
+/*Tablet Grid*/ 
+@media screen and (max-width: 850px) {
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 250px 100px 100px 100px 170px 20px 10px 250px 150px 30px  250px 50px 80px 140px 140px 150px 130px;
+    }
+
+    .post{
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .level-1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .level-2{
+        grid-row: 1/3;
+        grid-column: 2/3 ;
+    }
+    .level-3{
+        grid-row: 2/4;
+        grid-column: 1/2;
+    }
+    .level-4 {
+        grid-row: 3/5;
+        grid-column: 2/3;
+    }
+    .level-5{
+        grid-row: 4/6;
+    }
+    .level-6{
+        grid-row: 5/8;
+        grid-column: 2/3;
+    }
+    .level-7{
+        grid-row: 6/10;
+    }
+    .level-9{
+        grid-column: 1/2;
+        grid-row: 10/13;
+    }
+    .level-10{
+        grid-column: 2/3;
+        grid-row: 9/11;
+    }
+    .level-11{
+        grid-row: 11/14;
+        grid-column: 2/3;
+    }
+    .level-12{
+        grid-column: 1/2;
+        grid-row: span 2;
+    }
+
+    .level-13 {
+        grid-column: 2/3;
+        grid-row: span 2;
+    } 
+    .level-14{
+        grid-row: span 3;
+        grid-column: 1/2;
+    }
+    .level-15{
+        grid-column: 2/3;
+        grid-row: span 2;
+    }
+
+}
+
+/*Mobile Grid*/
+@media screen and (max-width: 425px) {
+    .gallery{
+        // width: 90vw;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 280px 470px 350px 280px 400px 290px 550px 280px 450px 270px 490px 320px 390px 530px 420px; 
+    }
+
+    .post{
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+/*DESIGN FOR HOMEPAGE ENDS
+-----------------------------------*/ 
