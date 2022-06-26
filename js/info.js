@@ -82,9 +82,11 @@ window.addEventListener('load', () => {
         }
     }
 
+    let link = dataPicture.gallery;
     //Render Data
     function renderData() {
-        hero.setAttribute.source = `url('./${dataPicture.gallery}')`;
+        hero.style.backgroundImage = `url('./${dataPicture.gallery}')`;
+        // hero.append("<img src=\" \" />");
         hero_title.innerHTML = dataPicture.title;
         hero_author.innerHTML = dataPicture.author;
         author.style.backgroundImage = `url('./${dataPicture.imageAuthor}')`
