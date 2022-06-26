@@ -84,7 +84,7 @@ window.addEventListener('load', () => {
 
     //Render Data
     function renderData() {
-        hero.style.backgroundImage = `url('./${dataPicture.gallery}')`;
+        hero.setAttribute.source = `url('./${dataPicture.gallery}')`;
         hero_title.innerHTML = dataPicture.title;
         hero_author.innerHTML = dataPicture.author;
         author.style.backgroundImage = `url('./${dataPicture.imageAuthor}')`
