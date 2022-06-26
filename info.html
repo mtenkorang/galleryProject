@@ -11,20 +11,20 @@
     <title>Slideshow</title>
 </head>
 <body>
-    <!-- Lightview Container -->
-    <div class="model" id="model" data-animation="slideInOutLeft">
-      <div id="light-view">
-          <div class="model-picture" id="model-image">
-              <div class="close" id="close">
-                  close
+
+        <!-- Lightview Container -->
+        <div class="model" id="model" data-animation="slideInOutLeft">
+          <div id="light-view">
+              <div class="model-picture" id="model-image">
+                  <div class="close" id="close">
+                      close
+                  </div>
               </div>
           </div>
-      </div>
-
-      </div>
     
+        </div>
 
-    <div class="container">
+    <div class="grid-container">
       <!-- Header -->
         <header class="header">
             <div class="logo">
@@ -33,40 +33,53 @@
             <a class="start" href="./index.html">stop slideshow</a>
         </header>
 
+        <section class="slide grid" id="slide" display="none">
+      
+          <div class="slide-gallery">
+              <!-- Art Picture -->
+              <div class="slide-gallery-picture grid" id="hero-image">
 
-        <section class="slide" id="slide" display="none">
+                  <div class="view-picture artpicture" id="view-picture">
+                      <div class="view">
+                        <span>view image</span>
+                      </div>
+                  </div>
 
-            <div class="slide-gallery">
-                <!-- Art Picture -->
-                <div class="slide-gallery-picture" id="hero-image">
-                    <div class="view-picture" id="view-picture">
-                        <div class="view">
-                        </div>
-                         <span>view image</span>
-                    </div>
-                </div>
+              
                 <!-- Art Header -->
-                <div class="slide-gallery-card">
-                  <h1 id="hero-title">
-                    Starry Night
-                  </h1>
-                  <p id="hero-author">
-                    Vincent Van Gogh
-                  </p>
-                </div>
-                <!-- Author Image -->
-                <div class="slide-gallery-author" id="author-image">
-                </div>
-            </div>
-            <!-- Art Information -->
-            <div class="slide-info">
-              <span class="year" id="year">1889</span>
+              <div class="slide-gallery-card text">
+                <h1 id="hero-title">
+                  Starry Night
+                </h1>
+                <p id="hero-author">
+                  Vincent Van Gogh
+                </p>
+              </div>
+
+              <div class="slide-gallery-author insert" id="author-image">
+              </div>
+
+              </div>
+             
+              
+            
+          </div>
+         
+          <div class="slide-info grid">
+            <span class="year item" id="year">1889</span>
+
+            <div class="details item">
               <p id="description"></p>
               <a href="" id="source" class="go-source start" target="_blank">go to source</a>
             </div>
-        </section>
+           
+          </div>
+      </section>
+
 
     </div>
+
+
 
 
     <!-- FOOTER -->
